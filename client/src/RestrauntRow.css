@@ -1,0 +1,58 @@
+.sectionTitle{
+    font-size: 23px;
+    font-family: boldFont;
+}
+
+.categoryContainer{
+    margin-top: 50px;
+}
+
+.restrauntSlideContainer{
+    position: relative;
+}
+
+.sliderButton-left{
+    left: -20px;
+    transform: rotate(180deg) translateY(-50%);
+}
+
+.sliderButton-right{
+    right: -20px;
+    transform: translateY(-50%);
+}
+
+.sliderButton{
+    width: 55px;
+    height: 55px;
+    border: 1px solid rgba(128, 128, 128, 0.24);
+    transform-origin: top;
+    border-radius: 360px;
+    z-index: 2;
+    top: 50%;
+    cursor: pointer;
+    position: absolute;
+}
+
+.hide{
+    display: none;
+}
+
+.sliderButtonImage{
+    border-radius: 360px;
+    box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+}
+
+.restrauntCardsMobile{
+    overflow-x: scroll;
+}
+
+.restrauntCardsFull{
+    overflow-x: hidden;
+}
+
+.restrauntCards{
+    margin-top: 20px;
+    display: flex;
+    scroll-behavior: smooth;
+    align-items: center;
+}

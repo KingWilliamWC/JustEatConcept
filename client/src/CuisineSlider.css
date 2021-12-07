@@ -1,0 +1,52 @@
+#cuisineSlideContainer{
+    display: flex;
+    align-items: center;
+    overflow-x: hidden;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#cuisineSlideContainerMobile{
+    display: flex;
+    align-items: center;
+    overflow-x: scroll;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#cuisineContainer{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.slideItem:not(:first-child){
+    margin-left: 20px;
+}
+
+.slideItem{
+    min-width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.slideItem p{
+    font-family: boldFont;
+}
+
+.slideItemActive{
+    background-color: tomato;
+}
+
+.slideItemTextActive{
+    color: white;
+}
+
+.slideItemText{
+    color: var(--primary-color);
+}

@@ -1,0 +1,37 @@
+@font-face {
+    font-family: regularFont;
+    src: url(./Fonts/Raleway-Regular.ttf);
+}
+
+@font-face {
+    font-family: mediumFont;
+    src: url(./Fonts/Raleway-Medium.ttf);
+}
+
+@font-face {
+    font-family: boldFont;
+    src: url(./Fonts/Raleway-Bold.ttf);
+}
+
+#root, #app{
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
+}
+
+/* css variables */
+:root{
+    --primary-color: #302F3C;
+    --primary-opacity-color: #302f3c80;
+    --secondary-color: #FF6838;
+}
+
+/* whole body structure */
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+p, button, a, h1, h2, h3, h4, h5, h6{
+    font-family: regularFont, sans-serif;
+    color: var(--primary-color);
+}

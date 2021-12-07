@@ -1,0 +1,186 @@
+#viewRestrauntWrapper{
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+#restrauntPageTop{
+    display: flex;
+}
+
+#backButton{
+    width: 25px;
+    height: 25px;
+    margin-right: auto;
+    cursor: pointer;
+}
+
+#basketButton{
+    width: 30px;
+    cursor: pointer;
+    height: 30px;
+    margin-left: auto;
+}
+
+#restrauntMainContainer{
+    width: 1000px;
+    height: 500px;
+    position: relative;
+}
+
+#restrauntImage{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    filter: brightness(50%);
+    object-fit: cover;
+}
+
+#restrauntInformationContainer{
+    background-color: white;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    width: 93%;
+    position: absolute;
+    bottom: 0;
+    height: 220px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#logoContainer{
+    height: 150px;
+    width: 150px;
+
+    position: relative;
+    top: -120px;
+}
+
+#restrauntInformationWrapper{
+    margin-top: -120px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+#logoImage{
+    border-radius: 360px;
+    height: 100%;
+    border-radius: 360px;
+    width: 100%;
+}
+
+#restrauntName{
+    font-size: 27px;
+    margin-top: 20px;
+    text-align: center;
+    font-family: boldFont;
+}
+
+#restrauntCuisineContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3px;
+}
+
+#restrauntCuisineContainer p{
+    color: var(--primary-opacity-color);
+}
+
+.cuisineSeperatorIcon-ViewRestraunt{
+    width: 5px;
+    filter: invert(17%) sepia(2%) saturate(5767%) hue-rotate(205deg) brightness(550%) contrast(92%);
+    margin: 0 10px;
+}
+
+#restrauntMetricsContainer{
+    margin-top: auto;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-bottom: 20px;
+}
+
+#deliveryContainer, #ratingContainer, #deliveryTimeContainer{
+    display: flex;
+    align-items: center;
+}
+
+#deliveryTimeContainer{
+    margin: 0 auto;
+}
+
+.metricIcons{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    filter: invert(57%) sepia(95%) saturate(3094%) hue-rotate(332deg) brightness(101%) contrast(100%);
+}
+
+.metricIconsBike{
+    width: 27px;
+    height: 27px;
+}
+
+.metricValueText{
+    color: var(--primary-opacity-color);
+    font-family: mediumFont;
+    font-size: 18px;
+}
+
+#restrauntMenuContainer{
+    width: 1000px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+#menuTitle{
+    font-family: boldFont;
+    font-size: 23px;
+}
+
+@media only screen and (max-width: 1250px){
+    #restrauntMainContainer{
+        width: 80%;
+    }
+    #restrauntMenuContainer{
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 850px){
+    #restrauntMetricsContainer{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    #restrauntMetricsContainer{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    #basketButton, #backButton {
+        display: none;
+    }
+
+    #restrauntMainContainer{
+        width: 100%;
+    }
+
+    #restrauntMenuContainer{
+        width: 100%;
+    }
+
+    #restrauntInformationContainer{
+        width: 101%;
+    }
+}

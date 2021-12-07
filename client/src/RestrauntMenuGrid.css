@@ -1,0 +1,9 @@
+#restrauntMenuGridContainer{
+    margin-top: 30px;
+}
+
+#restrauntMenuGridWrapper {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}

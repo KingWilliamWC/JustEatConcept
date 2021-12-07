@@ -1,0 +1,141 @@
+#areaWrapper{
+    padding-top: 35px;
+}
+#areaPreviewContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#postcodeText{
+    font-family: boldFont;
+    font-size: 23px;
+}
+
+#locationIconArea{
+    width: 35px;
+    height: 35px;
+    filter: invert(44%) sepia(96%) saturate(1652%) hue-rotate(339deg) brightness(107%) contrast(99%);
+    margin-right: 10px;
+}
+
+#editIcon{
+    width: 15px;
+    height: 15px;
+    filter: invert(44%) sepia(96%) saturate(1652%) hue-rotate(339deg) brightness(107%) contrast(99%);
+    margin-left: 5px;
+    margin-bottom: 5px;
+    align-self: flex-end;
+    cursor: pointer;
+}
+
+#questionContainer{
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+#questionText{
+    font-size: 28px;
+    font-family: boldFont;
+}
+
+#foodSearchContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    margin: 0 auto;
+    position: relative;
+}
+
+#searchInput{
+    border: 1px solid #302f3c3f;
+    outline: none;
+    font-size: 18px;
+    padding-left: 45px;
+    border-radius: 3px;
+    height: 38px;
+    width: 700px;
+}
+
+#searchInput::placeholder{
+    color: var(--primary-opacity-color);
+}
+
+#searchInput:focus::placeholder{
+    color: transparent;
+}
+
+#searchIcon{
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    left: 10px;
+    cursor: pointer;
+}
+
+#mainContentContainer{
+    width: 850px;
+    margin: 0 auto;
+}
+
+.restrauntRow:not(:first-child){
+    margin-top: 30px;
+}
+
+.restrauntContainer:not(:first-child){
+    margin-left: 20px;
+}
+
+@media only screen and (max-width: 950px){
+    #mainContentContainer{
+        width: 750px;
+    }
+}
+
+@media only screen and (max-width: 830px){
+    #mainContentContainer{
+        width: 88%;
+    }
+    #foodSearchContainer{
+        width: 88%;
+    }
+    #searchInput{
+        width: 100%;
+    }
+}
+
+/* @media only screen and (max-width: 770px){
+    #mainContentContainer{
+        width: 650px;
+    }
+
+    #searchInput{
+        width: 650px;
+    }
+}
+
+@media only screen and (max-width: 720px){
+    #searchInput{
+        width: 400px;
+    }
+    #mainContentContainer{
+        width: 400px;
+    }
+} */
+
+@media only screen and (max-width: 430px){
+    #searchInput{
+        width: 350px;
+    }
+}
+
+@media only screen and (max-width: 390px){
+    #searchInput{
+        width: 300px;
+        font-size: 16px;
+    }
+}

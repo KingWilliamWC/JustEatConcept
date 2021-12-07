@@ -1,0 +1,38 @@
+.restrauntItem{
+    width: 100%;
+    height: 50px;
+    box-shadow: rgba(17, 17, 26, 0.12) 0px 0px 16px;
+    border: 1px solid rgb(128 128 128 / 30%);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    cursor: pointer;
+}
+
+.restrauntItem:not(:first-child){
+    margin-top: 15px;
+}
+
+.restrauntItem .restrauntItemName{
+    font-family: boldFont;
+    font-size: 18px;
+}
+
+.restrauntItemPriceContainer{
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+}
+
+.restrauntItemPriceFromText{
+    color: var(--primary-opacity-color);
+    margin-right: 5px;
+}
+
+.restrauntItemPriceText{
+    color: var(--secondary-color);
+    font-family: boldFont;
+    font-size: 18px;
+}

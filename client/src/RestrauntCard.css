@@ -1,0 +1,101 @@
+.restrauntRatingTimeSide{
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.restrauntImageContainer{
+    position: relative;
+    border-radius: 17px;
+    overflow: hidden;
+}
+
+
+.restrauntContainer{
+    min-width: 360px;
+    cursor: pointer;
+}
+.restrauntContainer:hover .restrauntImage{
+    transform: scale(1.05);
+}
+.restrauntImage{
+    width: 100%;
+    height: auto;
+    border-radius: 17px;
+    transition: all 0.1s;
+}
+
+.restrauntInfoContainer{
+    width: 100%;
+    background-color: white;
+    height: fit-content;
+    position: absolute;
+    bottom: 0;
+    border: 1px solid rgba(128, 128, 128, 0.425);
+    border-bottom-right-radius: 17px;
+    border-bottom-left-radius: 17px;
+}
+
+.restrauntInfoWrapper{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 3px;
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.restrauntNameCuisineSide{
+    width: 60%;
+}
+
+.restrauntCuisines{
+    display: flex;
+    align-items: center;
+}
+
+.restrauntCuisineText{
+    color: var(--primary-opacity-color);
+    font-family: boldFont;
+    font-size: 15px;
+}
+
+.cuisineSeperatorIcon{
+    width: 3px;
+    filter: invert(17%) sepia(2%) saturate(5767%) hue-rotate(205deg) brightness(350%) contrast(92%);
+    margin-left: 10px;
+    margin-right: 5px;
+}
+
+.restrauntRatingTimeSide p{
+    color: var(--primary-opacity-color);
+    font-family: boldFont;
+}
+
+.restrauntTitle{
+    font-family: boldFont;
+    font-size: 21px;
+}
+
+.metricIcons{
+    display: flex;
+    flex-direction: column;
+}
+
+.metricIcon:nth-child(2){
+    margin-top: 5px;
+}
+
+.metricIcon{
+    width: 14px;
+    height: auto;
+    filter: invert(57%) sepia(95%) saturate(3094%) hue-rotate(332deg) brightness(101%) contrast(100%);
+}
+
+.metricValues{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 10px;
+}
