@@ -20,7 +20,10 @@ class RestrauntItemView extends Component{
     }
     render(){
         return(
-            <div id='restrauntItemViewContainer'>
+            <div>
+                <div onClick={() => this.props.onHideItemInfo()} id='restrauntItemViewContainer'>
+
+                </div>
                 <div id='restrauntItemViewWrapper'>
                     <p id='viewItemTitle'>Chicken Burger</p>
                     <p id='viewItemPrice'>£7.99</p>
@@ -35,7 +38,9 @@ class RestrauntItemView extends Component{
                         <p>Add To Order (£{(7.99 * this.state.quantity).toString()})</p>
                     </div>
                 </div>
+
             </div>
+
         )
     }
 }

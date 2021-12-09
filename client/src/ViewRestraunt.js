@@ -28,6 +28,10 @@ class ViewRestraunt extends Component{
     onShowItemInfo = (itemData) =>{
         this.setState({isViewingItem: true, viewItemData: itemData});
     }
+
+    onHideItemInfo = () => {
+        this.setState({isViewingItem: false});
+    }
     render(){
         return(
             <div id='viewRestraunt'>
@@ -81,7 +85,7 @@ class ViewRestraunt extends Component{
                         <RestrauntMenuGrid clickHandler={this.onShowItemInfo}/>
                     </div>
                 </div>
-                {this.state.isViewingItem ? <RestrauntItemView/> : ''}
+                {this.state.isViewingItem ? <RestrauntItemView onHideItemInfo={this.onHideItemInfo}/> : ''}
             </div>
         )
     }
